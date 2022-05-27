@@ -1,0 +1,41 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>List</title>  
+</head>  
+<body>  
+  
+<h3>Bank Information</h3>  
+<table border=8>  
+    <thead>  
+        <td>ifsc</td>  
+        <td>bank_id</td>  
+        <td>branch</td>  
+        <td>address</td>
+        <td>city</td>
+        <td>district</td>
+        <td>state</td>
+        <td>bank_name</td>
+    </thead>  
+      
+    {% for row in rows %}  
+      
+        <tr>  
+            <td>{{row["ifsc"]}}</td>  
+            <td>{{row["bank_id"]}}</td>  
+            <td>{{row["branch"]}}</td>  
+            <td>{{row["address"]}}</td> 
+            <td>{{row["city"]}}</td>  
+            <td>{{row["district"]}}</td>  
+            <td>{{row["state"]}}</td>  
+            <td>{{row["bank_name"]}}</td>  
+        </tr>  
+      
+    {% endfor %}  
+</table>  
+<br><br>  
+  
+<a href="/">Go back to home page</a>  
+  
+</body>  
+</html>  
